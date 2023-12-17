@@ -22,7 +22,7 @@
     background-repeat: no-repeat;
     background-position: 60% 0%;
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
   }
   
   #skills i {
