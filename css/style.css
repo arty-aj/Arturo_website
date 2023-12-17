@@ -21,7 +21,7 @@
       overflow: hidden;
   }
 
-  .hero::before {
+  /* .hero::before {
     content: "";
     position: absolute;
     top: 0;
@@ -36,10 +36,9 @@
     will-change: transform; 
     transform: translate3d(0, 0, 0); 
     background-attachment: fixed;
-  }
+  } */
 
-
-  /* .hero::before {
+  .hero::before {
     content: "";
     position: absolute;
     top: 0;
@@ -52,7 +51,9 @@
     background-position: 60% 0%;
     background-size: cover;
     background-attachment: fixed;
-} */
+}
+
+
   #skills i {
     height: 100px;
     width: 100px;
