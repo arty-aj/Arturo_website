@@ -16,15 +16,35 @@
   }
   
 /* Hero section background image */
-.hero {
+/* .hero {
     height: 100vh;
     background-image: url("../images/grad5.jpg");
     background-repeat: no-repeat;
     background-position: 60% 0%;
     background-size: cover;
     background-attachment: fixed;
-  }
+  } */
   
+  .hero {
+      height: 100vh;
+      position: relative;
+      overflow: hidden;
+  }
+
+  .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-image: url("../images/grad5.jpg");
+      background-repeat: no-repeat;
+      background-position: 60% 0%;
+      background-size: cover;
+  }
+
   #skills i {
     height: 100px;
     width: 100px;
