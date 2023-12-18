@@ -8,7 +8,8 @@
   /* Changing background color */
   body {
     background: var(--bg-color) !important;
-    margin-top: auto;
+    height: 100vh;
+    overflow-x: hidden;
   }
   
   /* Changing link color */
