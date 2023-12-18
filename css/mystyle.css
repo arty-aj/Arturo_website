@@ -1,22 +1,22 @@
-/* Color variables */
+/* Color variables *
 :root {
     --white-color: #fff;
     --bg-color: #fff;
     --gray-color: #ccc;
   }
   
-  /* Changing background color */
+  /* Changing background color 
   body {
     background: var(--bg-color) !important;
   }
   
-  /* Changing link color */
+  /* Changing link color 
   .nav-item .nav-link {
     color: var(--white-color);
   }
   
 
-   /* WORKS kinda  */
+   /* WORKS kinda  
     .hero {
       height: 100vh;
       position: relative;
@@ -62,7 +62,7 @@
     position: relative;
   }
   
-  /* Timeline background line */
+  /* Timeline background line 
   #about .img::before {
     content: "";
     left: 50%;
@@ -95,7 +95,7 @@
     width: 230px;
   }
   
-  /* Contact section background image */
+  /* Contact section background image 
   #contact {
     background-size: cover;
     background-attachment: fixed;
@@ -121,4 +121,5 @@
      width: 70px;
    }
   }
+  
 
