@@ -39,12 +39,6 @@
   transform: translate3d(0, 0, 0);
   } 
 
- 
-    @media only screen and (max-device-width: 480px) {
-    .hero {
-        background-attachment: scroll;
-    }
-  } 
 
   #skills i {
     height: 100px;
@@ -122,3 +116,8 @@
    }
   }
 
+  /* @media only screen and (max-device-width: 480px) {
+    .hero {
+        background-attachment: scroll;
+    }
+  }  */
