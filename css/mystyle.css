@@ -16,8 +16,7 @@
   }
   
 
-   /* WORKS kinda  */
-    .hero {
+  .hero {
       height: 100vh;
       position: relative;
       overflow: hidden;
@@ -115,9 +114,3 @@
      width: 70px;
    }
   }
-
-  /* @media only screen and (max-device-width: 480px) {
-    .hero {
-        background-attachment: scroll;
-    }
-  }  */
