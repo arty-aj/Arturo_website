@@ -15,6 +15,10 @@
     color: var(--white-color);
   }
   
+  .no-gutter{
+    margin-right: 0;
+    margin-left: 0;
+  }
 
   .hero {
       height: 100vh;
@@ -95,7 +99,25 @@
     background-position: center;
     background-image: url("../images/contact-bg.jpeg");
   }
-  
+
+  /* .portfolio-item{
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+
+  @media (min-width: 992px){
+    .portfolio-item {
+      max-width: none;
+      margin: 0;
+    }
+  }
+
+  ::selection {
+    background: #fcbc1d;
+    text-shadow: none;
+} */
+
   @media screen and (max-width: 990px) {
     #skills .card {
       width: calc(100% / 2 - 10px) !important;
