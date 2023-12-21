@@ -17,6 +17,11 @@
     .project-box:hover {
       box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
     }
+    
+    .project-box img {
+      max-width: 100%;
+      height: auto;
+    }
   </style>
 </head>
 <body>
@@ -25,7 +30,7 @@
   <div class="row">
     <div class="col-md-4">
       <div class="project-box">
-        <img src="images/personalPic.jpg" alt="Project 1">
+        <img src="images/personalPic.jpg" alt="Project 1" class="img-fluid">
         <h3>Project 1</h3>
         <p>Description for Project 1</p>
         <button class="btn btn-primary" data-toggle="modal" data-target="#popup1">Learn More</button>
