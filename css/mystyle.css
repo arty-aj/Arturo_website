@@ -110,12 +110,7 @@
   }
 
   .project-box:hover {
-    box-shadow: 0 0 10px rgba(255, 0, 0, 0.466);
-    filter: grayscale(100%);
-  }
-
-  .project-box:hover img {
-    filter: grayscale(0%);
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
   }
 
   .project-box img {
@@ -129,22 +124,37 @@
     transition: filter 0.3s ease;
   }
 
+  .project-box:hover img {
+    filter: grayscale(20%); /* Adjust the percentage for a subtle grayscale effect */
+  }
+
   .project-content {
     position: relative;
     z-index: 1;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.8); /* Adjust transparency as needed */
+    transition: transform 0.3s ease; /* Adding a smooth transition effect */
+  }
+
+  .project-box:hover .project-content {
+    transform: scale(1.1); /* Adjust the scale factor for emphasis */
   }
 
   .project-content h3,
   .project-content p {
     margin: 0;
+    transition: color 0.3s ease; /* Adding a smooth transition effect for color changes */
+  }
+
+  .project-box:hover .project-content h3,
+  .project-box:hover .project-content p {
+    color: #333; /* Adjust the color for emphasis */
   }
 
   .modal-dialog {
-  display: flex;
-  align-items: center;
-  min-height: calc(100% - 1rem);
+    display: flex;
+    align-items: center;
+    min-height: calc(100% - 1rem);
   }
 
 
