@@ -122,12 +122,11 @@
   top: 0;
   left: 0;
   z-index: -1;
-  filter: grayscale(0); /* Set initial grayscale to 0% */
   transition: filter 0.3s ease; /* Adding a smooth transition effect for filter changes */
 }
 
 .project-box:hover img {
-  filter: grayscale(100%); /* Adjust the filter for emphasis, here it's set to full grayscale */
+  filter: grayscale(100%) !important; /* Adjust the filter for emphasis, here it's set to full grayscale */
 }
 
 .project-content {
