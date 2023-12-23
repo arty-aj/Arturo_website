@@ -122,11 +122,6 @@
     top: 0;
     left: 0;
     z-index: -1;
-    transition: opacity 0.3s ease; /* Adding a smooth transition effect for opacity */
-  }
-
-  .project-box:hover img {
-    opacity: 0.8; /* Adjust the opacity for emphasis */
   }
 
   .project-content {
