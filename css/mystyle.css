@@ -108,12 +108,13 @@
   }
 
   .project-box:hover {
-    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.466);
   }
 
   .project-box img {
     max-width: 100%;
     height: auto;
+    max-height: 200px;
   }
 
   .modal-dialog {
@@ -122,24 +123,6 @@
   min-height: calc(100% - 1rem);
   }
 
-
-  /* .portfolio-item{
-    display: block;
-    position: relative;
-    overflow: hidden;
-  }
-
-  @media (min-width: 992px){
-    .portfolio-item {
-      max-width: none;
-      margin: 0;
-    }
-  }
-
-  ::selection {
-    background: #fcbc1d;
-    text-shadow: none;
-} */
 
   @media screen and (max-width: 990px) {
     #skills .card {
