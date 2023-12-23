@@ -106,11 +106,16 @@
     position: relative;
     overflow: hidden;
     margin-bottom: 20px;
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease, filter 0.3s ease;
   }
 
   .project-box:hover {
     box-shadow: 0 0 10px rgba(255, 0, 0, 0.466);
+    filter: grayscale(100%);
+  }
+
+  .project-box:hover img {
+    filter: grayscale(0%);
   }
 
   .project-box img {
@@ -121,6 +126,7 @@
     top: 0;
     left: 0;
     z-index: -1;
+    transition: filter 0.3s ease;
   }
 
   .project-content {
@@ -147,16 +153,16 @@
       width: calc(100% / 2 - 10px) !important;
     }
   }
-
-
  
   @media screen and (max-width: 668px) {
     #skills .card,
     #portfolio .card-wrapper {
       width: 100% !important;
     }
+
    #about .hire-text h2 {
      height: 70px;
      width: 70px;
    }
+   
   }
