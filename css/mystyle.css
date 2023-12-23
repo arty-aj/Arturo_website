@@ -106,11 +106,12 @@
     position: relative;
     overflow: hidden;
     margin-bottom: 20px;
-    transition: box-shadow 0.3s ease, filter 0.3s ease;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
   }
 
   .project-box:hover {
     box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    transform: scale(1.1); /* Adjust the scale factor for emphasis */
   }
 
   .project-box img {
@@ -121,11 +122,6 @@
     top: 0;
     left: 0;
     z-index: -1;
-    transition: filter 0.3s ease;
-  }
-
-  .project-box:hover img {
-    filter: grayscale(20%); /* Adjust the percentage for a subtle grayscale effect */
   }
 
   .project-content {
@@ -133,22 +129,16 @@
     z-index: 1;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.8); /* Adjust transparency as needed */
-    transition: transform 0.3s ease; /* Adding a smooth transition effect */
+    transition: color 0.3s ease; /* Adding a smooth transition effect for color changes */
   }
 
   .project-box:hover .project-content {
-    transform: scale(1.1); /* Adjust the scale factor for emphasis */
+    color: #333; /* Adjust the color for emphasis */
   }
 
   .project-content h3,
   .project-content p {
     margin: 0;
-    transition: color 0.3s ease; /* Adding a smooth transition effect for color changes */
-  }
-
-  .project-box:hover .project-content h3,
-  .project-box:hover .project-content p {
-    color: #333; /* Adjust the color for emphasis */
   }
 
   .modal-dialog {
@@ -156,7 +146,6 @@
     align-items: center;
     min-height: calc(100% - 1rem);
   }
-
 
   @media screen and (max-width: 990px) {
     #skills .card {
