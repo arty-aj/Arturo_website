@@ -5,85 +5,132 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
-    body {
-      background-color: #f8f9fa;
-    }
-
     .project-box {
-      margin-bottom: 0; /* Remove margin between boxes */
-      transition: box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 20px;
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
     }
 
     .project-box:hover {
       box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+      transform: scale(1.1); /* Adjust the scale factor for emphasis */
     }
 
     .project-box img {
-      max-width: 100%;
-      height: auto;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: filter 0.3s ease; /* Adding a smooth transition effect for filter changes */
+    }
+
+    .project-box:hover img {
+      filter: grayscale(100%); /* Adjust the filter for emphasis, here it's set to full grayscale */
+    }
+
+    .project-content {
+      position: relative;
+      z-index: 1;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8); /* Adjust transparency as needed */
+      transition: color 0.3s ease; /* Adding a smooth transition effect for color changes */
+    }
+
+    .project-box:hover .project-content {
+      color: #333; /* Adjust the color for emphasis */
+    }
+
+    .project-content h3,
+    .project-content p {
+      margin: 0;
     }
 
     .modal-dialog {
-    display: flex;
-    align-items: center;
-    min-height: calc(100% - 1rem);
+      display: flex;
+      align-items: center;
+      min-height: calc(100% - 1rem);
     }
   </style>
 </head>
 <body>
 
-<div class="container">
-  <div class="row no-gutters">
-    <div class="col-md-4">
-      <div class="project-box">
-        <img src="images/personalPic.jpg" alt="Project 1" class="img-fluid">
-        <h3>Project 1</h3>
-        <p>Description for Project 1</p>
-        <button class="btn btn-primary" data-toggle="modal" data-target="#popup1">Learn More</button>
-      </div>
+  <!-- Portfolio Section -->
+  <section class="container py-5" id="Portfolio">
+    <div class="row mt-4 py-3">
+      <div class="col-12 d-flex flex-column text-center">
+        <h2>Portfolio Section</h2>
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <div class="project-box">
+                <img src="images/personalPic.jpg" alt="Project 1">
+                  <div class="project-content">
+                    <h3>Project 1</h3>
+                    <p>for Project 1</p>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#popup1">Learn More</button>    
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="project-box">
+                <img src="images/grad5.jpg" alt="Project 2">
+                <div class="project-content">
+                  <h3>Project 1</h3>
+                  <p>Description for Project 1</p>
+                  <p>Description for Project 1</p>
+                  <p>Description for Project 1</p>
+                  <p>Description for Project 1</p>
+                  <button class="btn btn-primary" data-toggle="modal" data-target="#popup1">Learn More</button>    
+                </div>                    
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="project-box">
+                <img src="images/hub.jpg" alt="Project 3">
+                <div class="project-content">
+                  <h3>Project 1</h3>
+                  <p>Description for Project 1</p>
+                  <button class="btn btn-primary" data-toggle="modal" data-target="#popup1">Learn More</button>    
+                </div>                    
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="project-box">
+                <img src="images/MPic.jpg" alt="Project 4">
+                <div class="project-content">
+                  <h3>Project 1</h3>
+                  <p>Description for Project 1</p>
+                  <button class="btn btn-primary" data-toggle="modal" data-target="#popup1">Learn More</button>    
+                </div>                    
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="project-box">
+                <img src="your_image_url5.jpg" alt="Project 5">
+                <div class="project-content">
+                  <h3>Project 1</h3>
+                  <p>Description for Project 1</p>
+                  <button class="btn btn-primary" data-toggle="modal" data-target="#popup1">Learn More</button>    
+                </div>                    
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="project-box">
+                <img src="your_image_url6.jpg" alt="Project 6">
+                <div class="project-content">
+                  <h3>Project 1</h3>
+                  <p>Description for Project 1</p>
+                  <button class="btn btn-primary" data-toggle="modal" data-target="#popup1">Learn More</button>    
+                </div>                    
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
-    <div class="col-md-4">
-      <div class="project-box">
-        <img src="images/grad5.jpg" alt="Project 2">
-        <h3>Project 2</h3>
-        <p>Description for Project 2</p>
-        <button class="btn btn-primary" data-toggle="modal" data-target="#popup2">Learn More</button>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="project-box">
-        <img src="images/hub.jpg" alt="Project 3">
-        <h3>Project 3</h3>
-        <p>Description for Project 3</p>
-        <button class="btn btn-primary" data-toggle="modal" data-target="#popup3">Learn More</button>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="project-box">
-        <img src="images/MPic.jpg" alt="Project 4">
-        <h3>Project 4</h3>
-        <p>Description for Project 4</p>
-        <button class="btn btn-primary" data-toggle="modal" data-target="#popup4">Learn More</button>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="project-box">
-        <img src="your_image_url5.jpg" alt="Project 5">
-        <h3>Project 5</h3>
-        <p>Description for Project 5</p>
-        <button class="btn btn-primary" data-toggle="modal" data-target="#popup5">Learn More</button>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="project-box">
-        <img src="your_image_url6.jpg" alt="Project 6">
-        <h3>Project 6</h3>
-        <p>Description for Project 6</p>
-        <button class="btn btn-primary" data-toggle="modal" data-target="#popup6">Learn More</button>
-      </div>
-    </div>
-  </div>
-</div>
+</section>
 
 
 <!-- Modals -->
