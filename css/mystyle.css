@@ -100,6 +100,29 @@
     background-image: url("../images/contact-bg.jpeg");
   }
 
+
+  /* Pop up */
+  .project-box {
+    margin-bottom: 0; /* Remove margin between boxes */
+    transition: box-shadow 0.3s ease;
+  }
+
+  .project-box:hover {
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+  }
+
+  .project-box img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .modal-dialog {
+  display: flex;
+  align-items: center;
+  min-height: calc(100% - 1rem);
+  }
+
+
   /* .portfolio-item{
     display: block;
     position: relative;
