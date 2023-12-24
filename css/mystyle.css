@@ -102,7 +102,60 @@
 
 
   /* Pop up */
-.project-box {
+  .project-box {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .project-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .project-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Adjust the overlay color and transparency */
+    z-index: 2;
+    opacity: 0; /* Initially transparent */
+    transition: opacity 0.3s ease; /* Adding a smooth transition effect for overlay changes */
+  }
+  
+  .project-box:hover::before {
+    opacity: 1; /* Show the overlay on hover */
+  }
+  
+  .project-content {
+    position: relative;
+    z-index: 3; /* Ensure the content is above the image and overlay during hover */
+    padding: 20px;
+    color: #333; /* Default color for the content */
+    transition: color 0.3s ease; /* Adding a smooth transition effect for color changes */
+  }
+  
+  .project-box:hover .project-content {
+    color: #fff; /* Adjust the color for emphasis during hover */
+  }
+  
+  .project-content h3,
+  .project-content p {
+    margin: 0;
+  }
+
+
+
+ /* .project-box {
   position: relative;
   overflow: hidden;
   margin-bottom: 20px;
@@ -111,7 +164,7 @@
 
 .project-box:hover {
   box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
-  transform: scale(1.1); /* Adjust the scale factor for emphasis */
+  transform: scale(1.1);
 }
 
 .project-box img {
@@ -122,30 +175,30 @@
   top: 0;
   left: 0;
   z-index: -1;
-  transition: filter 0.3s ease; /* Adding a smooth transition effect for filter changes */
+  transition: filter 0.3s ease; 
+  filter: none !important;
 }
 
 .project-box:hover img {
-  filter: none !important;
-  /* filter: grayscale(100%) !important; Adjust the filter for emphasis, here it's set to full grayscale */
+   filter: grayscale(100%) 
 }
 
 .project-content {
   position: relative;
   z-index: 1;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.8); /* Adjust transparency as needed */
-  transition: color 0.3s ease; /* Adding a smooth transition effect for color changes */
+  background-color: rgba(255, 255, 255, 0.8); 
+  transition: color 0.3s ease; 
 }
 
 .project-box:hover .project-content {
-  color: #333; /* Adjust the color for emphasis */
+  color: #333; 
 }
 
 .project-content h3,
 .project-content p {
   margin: 0;
-}
+}  */
 
 .modal-dialog {
   display: flex;
