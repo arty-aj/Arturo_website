@@ -140,7 +140,7 @@
     position: relative;
     z-index: 3; /* Ensure the content is above the image and overlay during hover */
     padding: 20px;
-    color: #333; /* Default color for the content */
+    color: #000000; /* Default color for the content */
     transition: color 0.3s ease; /* Adding a smooth transition effect for color changes */
   }
   
@@ -148,6 +148,11 @@
     color: #fff; /* Adjust the color for emphasis during hover */
   }
   
+  .project-box:hover {
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    transform: scale(1.1);
+  }
+
   .project-content h3,
   .project-content p {
     margin: 0;
@@ -162,10 +167,7 @@
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.project-box:hover {
-  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
-  transform: scale(1.1);
-}
+
 
 .project-box img {
   width: 100%;
