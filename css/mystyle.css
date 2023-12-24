@@ -156,8 +156,7 @@
 
   .project-content h3,
   .project-content p,
-  .project-content h4,
-  .project-content button {
+  .project-content h4{
     margin: 0;
   }
 
