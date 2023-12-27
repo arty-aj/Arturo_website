@@ -41,65 +41,75 @@
         </nav>
       </header> 
 
-    <!-- Carousel section - Done, needs content -->
-    <section class="container py-5">
-      <div class="row mt-4 py-3">
-          <div class="col-12 d-flex flex-column text-center">
-            <h1>My journey in pictures</h1>
-            <div id="MyCarousel" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="images/grad1.jpg" class="d-block w-100" alt="grad1">
+      <!-- Carousel section - Done, needs content -->
+      <div style="background:#edeeef;">
+        <section class="container py-5">
+          <div class="row mt-4 py-3">
+            <div class="col-12 d-flex flex-column text-center">
+              <h1>My journey in pictures</h1>
+              <div id="MyCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/grad1.jpg" class="d-block w-100" alt="grad1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/gradIndex.jpg" class="d-block w-100" alt="gr">
+                  </div>
                 </div>
-                <div class="carousel-item">
-                  <img src="images/gradIndex.jpg" class="d-block w-100" alt="gr">
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#MyCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#MyCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#MyCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#MyCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
             </div>
           </div>
-        </div>
+        </section>
       </div>
-  </section>
 
-
-    <!-- About Section - not done -->
-     <section class="container py-5" id="About" style="background:#edeeef;">
-        <div class="row mt-4 py-3">
+      <!-- About Section - not done -->
+      <div style="background: #f0fbff;">
+        <section class="container py-5" id="About">
+          <div class="row mt-4 py-3">
+              <div class="col-12 d-flex flex-column text-center">
+                  <div class="row">
+                      <div class="col-4">
+                        <img src="images/mePic.jpg" style="border:8px solid white; width:350px!important; height:100%" 
+                        class="img-responsive img-circle" alt="Eric Wadkins">
+                      </div>
+                      <div class="col-8" style="text-align: justify;">
+                          <h2>Arturo Corona</h2>
+                          <h2>Info about me</h2>
+                          <h2>Row of buttons with my links on the bottom</h2>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="row mt-4 py-3">
             <div class="col-12 d-flex flex-column text-center">
-                <div class="row">
-                    <div class="col-4">
-                      <img src="images/mePic.jpg" style="border:8px solid white; width:350px!important; height:100%" 
-                      class="img-responsive img-circle" alt="Eric Wadkins">
-                    </div>
-                    <div class="col-8">
-                        <h2>Arturo Corona</h2>
-                        <h2>Info about me</h2>
-                        <h2>Row of buttons with my links on the bottom</h2>
-                    </div>
-                </div>
+                <h2> Connect with me!</h2>
+                <h2>Row of icons including: | LinkedIn | Github | Email | </h2>
             </div>
         </div>
-    </section>  
+        </section>  
+      </div>
 
-    <!-- Skills Section - Not Done -->
-    <section class="container py-5"  id="Skills">
-        <div class="row mt-4 py-3">
-            <div class="col-12 d-flex flex-column text-center">
-                <h2> SKILLS </h2>
-            </div>
-        </div>
-    </section>
+      <div style="background: #acdcee;">
+        <!-- Skills Section - Not Done -->
+        <section class="container py-5"  id="Skills">
+          <div class="row mt-4 py-3">
+              <div class="col-12 d-flex flex-column text-center">
+                  <h2> SKILLS </h2>
+              </div>
+          </div>
+        </section>
+      </div>
 
-    <!-- Portfolio Section - Done, needs content -->
-    <section class="container py-5" id="Portfolio">
+      <!-- Portfolio Section - Done, needs content -->
+      <section class="container py-5" id="Portfolio">
         <div class="row mt-4 py-3">
           <div class="col-12 d-flex flex-column text-center">
             <h2>PORTFOLIO</h2>
@@ -167,146 +177,149 @@
               </div>
             </div>
         </div>
-    </section>
-
-    <!-- Work history Section - Done, needs content -->
-    <section class="container py-5" id="Timeline">
-        <div class="row mt-4 py-3">
-          <div class="col-12 d-flex flex-column text-center">
-            <h2>WORK HISTORY</h2>
-            <h5 class="text-secondary fw-normal py-2 fst-italic">
-              Learn more about my professional work history!
-            </h5>
-          </div>
-        </div>
-        <div class="row flex-row-reverse flex-md-row mt-5 pt-5">
-          <div class="col-9 col-md-5 text-md-end">
-            <h5>Marathon Petroleum Coorporation</h5>
-            <h5>Network Operations Engineer</h5>
-            <h6>Aug - Dec 2023</h6>
-            <p>
-              HI HELOO
-            </p>
-          </div>
-          <div class="col-3 col-md-2 img text-center">
-            <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="images/timeline/hub.jpg" alt="img">
-          </div>
-        </div>
-        <div class="row justify-content-md-end mt-5 pt-5">
-          <div class="col-3 col-md-2 img text-center">
-            <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="images/timeline/MPic.jpg" alt="img">
-          </div>
-          <div class="col-9 col-md-5">
-            <h5>Marathon Petroleum Coorporation</h5>
-            <h5>SAP Software Engineer</h5>
-            <h6>May - Aug 2023</h6>
-            <p>
-              Hello
-            </p>
-          </div>
-        </div>
-        <div class="row flex-row-reverse flex-md-row mt-5 pt-5">
-          <div class="col-9 col-md-5 text-md-end">
-            <h5>Codepath</h5>
-            <h5>Teaching Assistant for Mobile App iOS Development</h5>        
-            <h6>Aug - Dec 2022</h6>
-            <p>
-              Hi HELOO
-            </p>
-          </div>
-          <div class="col-3 col-md-2 img text-center">
-            <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="images/timeline/Codepath.jpg" alt="img">
-          </div>
-        </div>
-        <div class="row justify-content-md-end mt-5 pt-5">
-          <div class="col-3 col-md-2 img text-center">
-            <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="images/timeline/6Connex.jpg" alt="img">
-          </div>
-          <div class="col-9 col-md-5">
-            <h5>6Connex</h5>
-            <h5>Quality Assurance Engineer</h5>           
-            <h6>June - Aug 2022</h6>
-            <p>
-              Hi HELOO
-            </p>
-          </div>
-        </div>
       </section>
 
+       <!-- Work history Section - Done, needs content -->
+      <div style="background: #acdcee;">
+        <section class="container py-5" id="Timeline">
+          <div class="row mt-4 py-3">
+            <div class="col-12 d-flex flex-column text-center">
+              <h2>WORK HISTORY</h2>
+              <h5 class="text-secondary fw-normal py-2 fst-italic">
+                Learn more about my professional work history!
+              </h5>
+            </div>
+          </div>
+          <div class="row flex-row-reverse flex-md-row mt-5 pt-5">
+            <div class="col-9 col-md-5 text-md-end">
+              <h5>Marathon Petroleum Coorporation</h5>
+              <h5>Network Operations Engineer</h5>
+              <h6>Aug - Dec 2023</h6>
+              <p>
+                HI HELOO
+              </p>
+            </div>
+            <div class="col-3 col-md-2 img text-center">
+              <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="images/timeline/hub.jpg" alt="img">
+            </div>
+          </div>
+          <div class="row justify-content-md-end mt-5 pt-5">
+            <div class="col-3 col-md-2 img text-center">
+              <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="images/timeline/MPic.jpg" alt="img">
+            </div>
+            <div class="col-9 col-md-5">
+              <h5>Marathon Petroleum Coorporation</h5>
+              <h5>SAP Software Engineer</h5>
+              <h6>May - Aug 2023</h6>
+              <p>
+                Hello
+              </p>
+            </div>
+          </div>
+          <div class="row flex-row-reverse flex-md-row mt-5 pt-5">
+            <div class="col-9 col-md-5 text-md-end">
+              <h5>Codepath</h5>
+              <h5>Teaching Assistant for Mobile App iOS Development</h5>        
+              <h6>Aug - Dec 2022</h6>
+              <p>
+                Hi HELOO
+              </p>
+            </div>
+            <div class="col-3 col-md-2 img text-center">
+              <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="images/timeline/Codepath.jpg" alt="img">
+            </div>
+          </div>
+          <div class="row justify-content-md-end mt-5 pt-5">
+            <div class="col-3 col-md-2 img text-center">
+              <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="images/timeline/6Connex.jpg" alt="img">
+            </div>
+            <div class="col-9 col-md-5">
+              <h5>6Connex</h5>
+              <h5>Quality Assurance Engineer</h5>           
+              <h6>June - Aug 2022</h6>
+              <p>
+                Hi HELOO
+              </p>
+            </div>
+          </div>
+        </section>
 
-      <!-- Leadership and education - Done, needs content-->
-      <section class="container py-5" id="Timeline">
-        <div class="row mt-4 py-3">
-          <div class="col-12 d-flex flex-column text-center">
-            <h2>EDUCATION AND LEADERSHIP</h2>
-            <h5 class="text-secondary fw-normal py-2 fst-italic">
-              Learn more about my education and leadership experiences!
-            </h5>
+        <!-- Leadership and education - Done, needs content-->
+        <section class="container py-5" >
+          <div class="row mt-4 py-3">
+            <div class="col-12 d-flex flex-column text-center">
+              <h2>EDUCATION AND LEADERSHIP</h2>
+              <h5 class="text-secondary fw-normal py-2 fst-italic">
+                Learn more about my education and leadership experiences!
+              </h5>
+            </div>
           </div>
-        </div>
-        <div class="row flex-row-reverse flex-md-row mt-5 pt-5">
-          <div class="col-9 col-md-5 text-md-end">
-            <h5>Bachelors of Science in Computer Science Degree</h5>
-            <h5>Texas A&M University San Antonio</h5>
-            <h6>2019-2023</h6>
-            <p>
-              Student and different things I done
-            </p>
+          <div class="row flex-row-reverse flex-md-row mt-5 pt-5">
+            <div class="col-9 col-md-5 text-md-end">
+              <h5>Bachelors of Science in Computer Science Degree</h5>
+              <h5>Texas A&M University San Antonio</h5>
+              <h6>2019-2023</h6>
+              <p>
+                Student and different things I done
+              </p>
+            </div>
+            <div class="col-3 col-md-2 img text-center">
+              <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="images/timeline/gradTimeline.jpg" alt="img">
+            </div>
           </div>
-          <div class="col-3 col-md-2 img text-center">
-            <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="images/timeline/gradTimeline.jpg" alt="img">
+          <div class="row justify-content-md-end mt-5 pt-5">
+            <div class="col-3 col-md-2 img text-center">
+              <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="images/timeline/plcPic.jpg" alt="img">
+            </div>
+            <div class="col-9 col-md-5">
+              <h5>President's Leadership Class Scholar </h5>
+              <h5>Texas A&M University San Antonio</h5>
+              <h6>2019-2023</h6>
+              <p>
+                Volunteer stuff
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="row justify-content-md-end mt-5 pt-5">
-          <div class="col-3 col-md-2 img text-center">
-            <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="images/timeline/plcPic.jpg" alt="img">
+          <div class="row flex-row-reverse flex-md-row mt-5 pt-5">
+            <div class="col-9 col-md-5 text-md-end">
+              <h5>President: Association for Computing Machinery</h5>
+              <h5>Texas A&M University San Antonio</h5>
+              <h6>Jan - Dec 2023</h6>
+              <p>
+                HI HELOO
+              </p>
+            </div>
+            <div class="col-3 col-md-2 img text-center">
+              <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="images/timeline/ACM.jpg" alt="img">
+            </div>
           </div>
-          <div class="col-9 col-md-5">
-            <h5>President's Leadership Class Scholar </h5>
-            <h5>Texas A&M University San Antonio</h5>
-            <h6>2019-2023</h6>
-            <p>
-              Volunteer stuff
-            </p>
+          <div class="row justify-content-md-end mt-5 pt-5">
+            <div class="col-3 col-md-2 img text-center">
+              <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="images/timeline/spursCoach.jpg" alt="img">
+            </div>
+            <div class="col-9 col-md-5">
+              <h5>Spurs Little League Coach</h5>
+              <h5>Methodist Healthcare Ministries</h5>
+              <h6>Jan - Mar 2020</h6>
+              <p>
+                Coaching stuff volunteering 
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="row flex-row-reverse flex-md-row mt-5 pt-5">
-          <div class="col-9 col-md-5 text-md-end">
-            <h5>President: Association for Computing Machinery</h5>
-            <h5>Texas A&M University San Antonio</h5>
-            <h6>Jan - Dec 2023</h6>
-            <p>
-              HI HELOO
-            </p>
-          </div>
-          <div class="col-3 col-md-2 img text-center">
-            <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="images/timeline/ACM.jpg" alt="img">
-          </div>
-        </div>
-        <div class="row justify-content-md-end mt-5 pt-5">
-          <div class="col-3 col-md-2 img text-center">
-            <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="images/timeline/spursCoach.jpg" alt="img">
-          </div>
-          <div class="col-9 col-md-5">
-            <h5>Spurs Little League Coach</h5>
-            <h5>Methodist Healthcare Ministries</h5>
-            <h6>Jan - Mar 2020</h6>
-            <p>
-              Coaching stuff volunteering 
-            </p>
-          </div>
-        </div>
-      </section>
-
+        </section>
+      </div>
 
     <!-- Contact Section - Not done yet-->
     <section id="Contact">
-        <div class="row mt-4 py-3">
-            <div class="col-12 d-flex flex-column text-center">
-                <h2> CONTACT ME </h2>
-            </div>
-        </div>
+      <div class="row mt-4 py-3">
+          <div class="col-12 d-flex flex-column text-center">
+              <h2> CONTACT ME </h2>
+          </div>
+      </div>
     </section>
+
+
+
 
 
     <!-- Modals -->
