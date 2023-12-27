@@ -1,0 +1,10 @@
+Android
+    Instagram clone - Needs work and to be redone in jetpack compose - Done
+    Nasa Astronomy pic of the day - Done
+Websites
+    Asteroid drilling stats 2022 HackUTD - Done
+    Inn-tern Marathon hackathon- Done
+    Job Application Resume Analyzer Marathon hackathon - Done
+    Senior project - Done, need to revisit the site
+    Personal website - Almost Done
+iOS 0
