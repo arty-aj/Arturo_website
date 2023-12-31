@@ -63,6 +63,10 @@
     object-fit: cover;
   }
   
+  #portfolio h3{
+    color: #fcbc1d;
+  }
+
   #about .img,
   #about img,
   .hire-text h2 {
