@@ -216,6 +216,16 @@
                   </div>
                 </div>
                 <div class="col-md-4">
+                  <div class="project-box" data-bs-toggle="modal" data-bs-target="#twitter">
+                    <img src="images/portfolio/android.jpg" alt="Project 3">
+                    <div class="project-content">
+                      <h3>Twitter</h3>
+                      <h3>Clone</h3>
+                      <p>Andoid Kotlin | MVC | Twitter API | Glide</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
                   <div class="project-box" data-bs-toggle="modal" data-bs-target="#inntern">
                     <img src="images/portfolio/dotnet.jpg" alt="Project 4">
                     <div class="project-content">
@@ -437,11 +447,11 @@
         </section>
       </div>
 
-    <!-- Contact Section - Not done yet-->
+    <!-- Footer Section - done-->
     <section id="Contact">
       <div class="row mt-4 py-3">
           <div class="col-12 d-flex flex-column text-center">
-              <h2>Made with Github pages. If any bugs, please <a href="https://www.linkedin.com/in/artyarturocorona/">contact me.</a></h2>
+              <h5>Made with Github pages. If you happen to find any bugs, please <a href="https://www.linkedin.com/in/artyarturocorona/">contact me.</a></h5>
           </div>
       </div>
     </section> 
@@ -470,33 +480,37 @@
               <h1 class="text-center">NASA Astronomy Picture of the Day</h1>
               <div class="row">
                 <div class="col-lg-6">
-                    <img src="images/modals/NYT.gif" alt="NYT">
+                    <img src="images/modals/APOD.gif" alt="NYT">
                 </div>
                 <div class="col-lg-6">
                   <h3>
                     <strong>Project Description:</strong>
                     <ul>
                       <li>
-                        I have always been mesmerized and intrigued by our Universe, the sheerf size of it baffles me every
-                        day. While looking around for some API's to explore and play around with I stumbled upon NASA's 
-                        free API. From the moment I saw all of its possibilities I knew I'd want to explore its many 
-                        feutures. As of now I've explored the Astronomy Picture of the day (APOD) and plan on expanding this app 
-                        even further. This app is designed to show users the APOD and also allows for you to chose the APOD of 
-                        a different date. This is done using Retrofit for the network connection and communication with 
-                        NASA API. It also uses Glide for image loading and TouchView for zoom in and out functionality
-                        on the images. 
+                        Inspired by the sheer size of our Universe, I created an application that shows its users
+                        NASA Astronomy Picture of the Day (APOD). This is an application I've always wanted to do 
+                        and have had a lot of fun seeing it into fruiton.
                       </li>
                     </ul>
                     <strong>Project Learnings:</strong>
                     <ul>
                       <li>
-                        Learnings desc
+                        Retrofit and API
+                      </li>
+                      <li>
+                        MVVM
                       </li>
                     </ul>
-                    <strong>Technologies:</strong>
+                    <strong>Future plans:</strong>
                     <ul>
                       <li>
-                        Android Studio
+                        Nav bar with - 
+                      </li>
+                      <li>
+                        Log in functionalities to save favorite APOD's
+                      </li>
+                      <li>
+                        Use other API endpoints from NASA
                       </li>
                     </ul>
                   </h3>
@@ -550,10 +564,10 @@
                               Learnings desc
                             </li>
                           </ul>
-                          <strong>Technologies:</strong>
+                          <strong>Future plans:</strong>
                           <ul>
                             <li>
-                              Android Studio
+                              Migrate to Jetpack Compose and Kotlin.
                             </li>
                           </ul>
                         </h3>
@@ -609,15 +623,65 @@
                         Learnings desc
                       </li>
                     </ul>
-                    <strong>Technologies:</strong>
+                    <strong>Future plans:</strong>
                     <ul>
                       <li>
-                        Android Studio
+                        Migrate to Jetpack Compose
                       </li>
                     </ul>
                   </h3>
                   <div class="text-center" style="padding-top:20px">
                     <a href="https://github.com/arty-aj/InstagramComplete">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="twitter" tabindex="-1" role="dialog" aria-labelledby="popup1Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="popup1Label">Android Kotlin</h5>
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h1 class="text-center">Twitter Clone</h1>
+              <div class="row">
+                <div class="col-lg-6">
+                    <img src="images/modals/Twitter.gif" alt="NYT">
+                </div>
+                <div class="col-lg-6">
+                  <h3>
+                    <strong>Project Description:</strong>
+                    <ul>
+                      <li>
+                        Twitter clone
+                      </li>
+                    </ul>
+                    <strong>Project Learnings:</strong>
+                    <ul>
+                      <li>
+                        Learnings desc
+                      </li>
+                    </ul>
+                    <strong>Future plans:</strong>
+                    <ul>
+                      <li>
+                        Migrate to Jetpack Compose
+                      </li>
+                    </ul>
+                  </h3>
+                  <div class="text-center" style="padding-top:20px">
+                    <a href="https://github.com/arty-aj/TwitterApp">
                       <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
                         <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"></path>
                       </svg>
